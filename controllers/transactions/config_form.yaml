@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Transaction
+
+# Model Form Field configuration
+form: $/webinsane/yandexmbutton/models/transaction/fields.yaml
+
+# Model Class name
+modelClass: Webinsane\Yandexmbutton\Models\Transaction
+
+# Default redirect location
+defaultRedirect: webinsane/yandexmbutton/transactions
+
+# Create page
+create:
+    title: Create Transaction
+    redirect: webinsane/yandexmbutton/transactions/update/:id
+    redirectClose: webinsane/yandexmbutton/transactions
+
+# Update page
+update:
+    title: Edit Transaction
+    redirect: webinsane/yandexmbutton/transactions
+    redirectClose: webinsane/yandexmbutton/transactions
+
+# Preview page
+preview:
+    title: Preview Transaction

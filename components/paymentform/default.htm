@@ -1,0 +1,21 @@
+{%if onoff == 1 %}
+<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+    <input type="hidden" name="receiver" value="{{wallet}}">
+    <input type="hidden" name="quickpay-form" value="shop">
+    <input type="hidden" name="targets" value="транзакция {{user.id}}">
+    <input type="hidden" name="formcomment" value="Платеж mangu">
+
+    <input type="hidden" name="label" value="{{user.id}}">
+    <input type="hidden" name="need-fio" value="false">
+    <input type="hidden" name="need-email" value="true">
+    <input type="hidden" name="need-phone" value="false">
+    <input type="hidden" name="need-address" value="false">
+    <input type="" name="sum" value="" placeholder="Сумма" data-type="number" class="form-control">
+    <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
+    <label class=""><input type="radio" name="paymentType" value="AC">Банковской картой</label>
+    <br>
+    <input type="submit" value="Пополнить" class="btn btn-success mt-4">
+</form>
+{%else%}
+Скоро станет доступным
+{%endif%}

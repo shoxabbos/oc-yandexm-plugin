@@ -1,0 +1,21 @@
+tabs:
+    fields:
+        formenable:
+            label: Включить метод оплаты?
+            type: switch
+            tab: 'Main settings'
+        wallet:
+            label: 'Wallet number'
+            span: auto
+            required: 1
+            type: text
+            tab: 'Main settings'
+        apikey:
+            label: 'API Key'
+            span: auto
+            required: 1
+            type: text
+            tab: 'Main settings'
+            comment: 'https://money.yandex.ru/myservices/online.xml'
+
+
